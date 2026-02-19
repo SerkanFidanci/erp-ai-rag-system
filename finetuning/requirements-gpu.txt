@@ -1,0 +1,21 @@
+# Fine-tuning gereksinimleri
+# GPU (CUDA) gerektirir!
+
+# Temel
+torch>=2.1.0
+transformers>=4.36.0
+datasets>=2.14.0
+accelerate>=0.25.0
+
+# Unsloth (hızlı fine-tuning)
+# pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+unsloth
+
+# LoRA/QLoRA
+peft>=0.7.0
+bitsandbytes>=0.41.0
+trl>=0.7.0
+
+# Diğer
+sentencepiece
+protobuf
