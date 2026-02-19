@@ -114,16 +114,6 @@ curl -X POST http://localhost:5000/api/chat \
 
 ---
 
-## CV / Portfolyo İçin Kullanım
-Bu projeyi CV’de şu şekilde konumlandırabilirsiniz:
-- **Applied AI / Backend**: ERP veritabanı için Türkçe doğal dil sorgulama sistemi
-- **RAG + LLM Engineering**: şema tabanlı prompt zenginleştirme ve SQL üretim pipeline’ı
-- **AI Safety / Data Security**: SQL doğrulama ve zararlı komut engelleme
-
-Örnek kısa cümle:
-> “ERP veritabanları için Türkçe doğal dil sorgularını RAG destekli ve güvenli SQL’e dönüştüren bir AI backend sistemi geliştirdim; kullanıcı düzeltmelerinden öğrenen feedback döngüsü kurdum.”
-
----
 
 ## Production’a Geçmeden Önce
 - `debug=False` ile çalıştırın
