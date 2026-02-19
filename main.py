@@ -71,7 +71,7 @@ def check_rag():
         return True
     
     print("✗ RAG vektör veritabanı bulunamadı")
-    print("  Oluşturmak için: python setup.py")
+    print("  Oluşturmak için: python main.py setup")
     return False
 
 def setup_rag():
