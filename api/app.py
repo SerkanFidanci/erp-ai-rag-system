@@ -27,7 +27,7 @@ def index():
 @app.route('/api/chat', methods=['POST'])
 def chat():
     """Chat endpoint"""
-    data = request.json
+    data = request.get_json(silent=True) or {}
     question = data.get('message', '').strip()
     
     if not question:
@@ -169,7 +169,7 @@ def correct_query():
     Kullanıcı düzeltmesi al ve öğren
     Body: {question, wrong_sql, correct_sql}
     """
-    data = request.json
+    data = request.get_json(silent=True) or {}
     question = data.get('question', '')
     wrong_sql = data.get('wrong_sql', '')
     correct_sql = data.get('correct_sql', '')
@@ -192,7 +192,7 @@ def submit_feedback():
     Kullanıcı geri bildirimi
     Body: {question, sql, is_correct, comment}
     """
-    data = request.json
+    data = request.get_json(silent=True) or {}
     question = data.get('question', '')
     sql = data.get('sql', '')
     is_correct = data.get('is_correct', False)
